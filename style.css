@@ -1,0 +1,31 @@
+body {
+    background-image: url(Главная.png);
+    /* , url(Список.png); */
+    background-repeat: no-repeat;
+    /* , no-repeat; */
+    background-position: left top;
+    /* , left top 700px; */
+    background-size: 100%;
+    /* , 100%; */
+    margin: 0; /* Обнуляем отступы */
+    }
+.head {
+    width: 1000px;
+    height: 1300px;
+    /* overflow: hide; */
+}
+.center {
+    width: 600px;
+    height: 200px;
+    }
+
+
+.container {
+  display: flex; /* Создаем гибкую структуру */
+  flex-direction: column; /* Располагаем элементы вертикально */
+  min-height: 70vh; /* Минимальная высота равна высоте вьюпорта */
+}
+
+.footer {
+  margin-top: auto; /* Здесь вступает в действие магия Flexbox */
+}
