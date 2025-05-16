@@ -1,0 +1,89 @@
+body {
+    background-image: url(Сведения.PNG);
+    /* , url(Список.png); */
+    background-repeat: no-repeat;
+    /* , no-repeat; */
+    background-position: left top;
+    /* , left top 700px; */
+    background-size: 100%;
+    /* , 100%; */
+    margin: 0; /* Обнуляем отступы */
+    }
+.head {
+    width: 1000px;
+    height: 1300px;
+    /* overflow: hide; */
+}
+.center {
+    width: 600px;
+    height: 200px;
+    }
+    body {
+      font-family: 'Arial', sans-serif; /* Установка семейства шрифтов и стилей по умолчанию */
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff; /* Установка цвета фона */
+  }
+
+  /* Стили для элемента header */
+  header {
+      background-color: #707070; /* Установка цвета фона */
+      color: white; /* Установка цвета текста */
+      padding: 10px;
+      text-align: center;
+  }
+
+  /* Стили для навигационного меню */
+  nav ul {
+      list-style-type: none; /* Убрать маркеры списка */
+      margin: 0;
+      padding: 0;
+  }
+
+  nav li {
+      display: inline; /* Отображение пунктов списка горизонтально */
+      margin-right: 15px; /* Установка правого отступа для пунктов списка */
+  }
+
+  /* Стили для основного раздела веб-страницы */
+  section {
+      max-width: 800px; /* Установка максимальной ширины раздела */
+      margin: auto; /* Центрирование раздела на странице */
+      padding: 20px;
+      background-color: white; /* Установка цвета фона */
+  }
+
+  /* Стили для каждой статьи (товара) в разделе */
+  article {
+      margin-bottom: 20px; /* Установка нижнего отступа для каждой статьи */
+      border: 1px solid #ddd; /* Добавление рамки и установка цвета рамки */
+      padding: 10px;
+      background-color: white; /* Установка цвета фона */
+  }
+
+  article img {
+      width: 50%; /* Установка ширины изображений для статей */
+      height: auto; /* Сохранение пропорций изображений */
+      border: 1px solid #ddd; /* Добавление рамки к изображениям */
+  }
+
+  /* Стили для элемента footer */
+ /* footer {
+      background-color: #707070; /* Установка цвета фона 
+      color: white; /* Установка цвета текста 
+      text-align: center;
+      padding: 10px;
+      position: fixed; /* Фиксирование подвала внизу видимой области 
+      bottom: 0;
+      width: 100%; /* Установка ширины в 100% от видимой области 
+  }*/
+
+.container {
+  display: flex; /* Создаем гибкую структуру */
+  flex-direction: column; /* Располагаем элементы вертикально */
+  min-height: 70vh; /* Минимальная высота равна высоте вьюпорта */
+}
+
+.footer {
+  margin-top: auto; /* Здесь вступает в действие магия Flexbox */
+}

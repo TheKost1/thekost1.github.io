@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html id="Список">
+ <head>
+  <title>Современные автомобили</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styleСписок.css">
+  <link rel="icon" type="image/png" href="Logo.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  #myInput {
+    background-image: url('../css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  #myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+  }
+  
+  #myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+  }
+  
+  #myTable tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myTable tr.header, #myTable tr:hover {
+    background-color: #f1f1f1;
+  }
+  </style>
+  </head>
+
+ </head>
+
+ <body>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    header {
+        background-color: #62ebed;
+        padding: 10px;
+        text-align: center;
+    }
+
+    footer {
+        background-color: #727272;
+        padding: 0px;
+        text-align: center;
+    }
+</style>
+
+
+<header>
+   <nav>
+   <img src="Logo.png" alt="Логотип"
+        width="40" height="30">
+     <a href="index.html">Главная</a>
+     <a href="Список.html">Автомобили</a>
+     <a href="Форма.html">Обратная связь</a>
+     <a href="Сведения.html">Сведения</a>
+ 
+   </nav>
+ </header>
+<main>
+
+</main>
+
+<!-- <input type="text" id="searchInput" placeholder="Поиск по маркам..."> -->
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Поиск по маркам..." title="Введите марку">
+
+<!-- <table id="myTable">
+   <tr class="header">
+     <th style="width:60%;">Имя</th>
+     <th style="width:40%;">Страна</th>
+   </tr>
+   <tr>
+     <td>Alfreds Futterkiste</td>
+     <td>Германия</td>
+   </tr>
+   <tr>
+     <td>Berglunds snabbkop</td>
+     <td>Швеция</td>
+   </tr>
+   <tr>
+     <td>Island Trading</td>
+     <td>Великобритания</td>
+   </tr>
+   <tr>
+     <td>Koniglich Essen</td>
+     <td>Германия</td>
+   </tr>
+   <tr>
+     <td>Laughing Bacchus Winecellars</td>
+     <td>Канада</td>
+   </tr>
+   <tr>
+     <td>Magazzini Alimentari Riuniti</td>
+     <td>Италия</td>
+   </tr>
+   <tr>
+     <td>North/South</td>
+     <td>Великобритания</td>
+   </tr>
+   <tr>
+     <td>Paris specialites</td>
+     <td>Франция</td>
+   </tr>
+ </table> -->
+
+
+
+<table id="myTable">
+  <tr>
+    <th>Марка</th>
+    <th>Цвет</th>
+    <th>Год</th>
+  </tr>
+  <tr>
+    <td><h4>BMW</h4></td>
+    <td>Красный</td>
+    <td>1990</td>
+  </tr>
+  <tr>
+    <td><h4>Porsche</h4></td>
+    <td>Чёрный</td>
+    <td>2000</td>
+  </tr>
+  <tr>
+    <td><h4>Volkswagen</h4></td>
+    <td>Белый</td>
+    <td>2010</td>
+  </tr>
+  <tr>
+    <td><h4>Porschwagen</h4></td>
+    <td>Зелёный</td>
+    <td>2020</td>
+  </tr>
+</table>
+
+<script>
+   function myFunction() {
+     var input, filter, table, tr, td, i, txtValue;
+     input = document.getElementById("myInput");
+     filter = input.value.toUpperCase();
+     table = document.getElementById("myTable");
+     tr = table.getElementsByTagName("tr");
+     for (i = 0; i < tr.length; i++) {
+       td = tr[i].getElementsByTagName("td")[0];
+       if (td) {
+         txtValue = td.textContent || td.innerText;
+         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+           tr[i].style.display = "";
+         } else {
+           tr[i].style.display = "none";
+         }
+       }       
+     }
+   }
+   </script>
+
+<!-- Таблица с карточками -->
+<table>
+   <tr>
+      <td>
+         <div align="center" class="card">
+            <img src="car.png" alt="Car" style="width:100%">
+            <div class="containery">
+               <h4><b>BMW</b></h4>
+               <p>Описание</p>
+               <a href="Сведения.html">Купить</a>
+            </div>
+         </div>
+      </td>
+      <td>
+         <div align="center" class="card">
+            <img src="car.png" alt="Car" style="width:100%">
+            <div class="containery">
+               <h4><b>Porsche</b></h4>
+               <p>Описание</p>
+               <a href="Сведения.html">Купить</a>
+            </div>
+         </div>
+      </td>
+      <td>
+         <div align="center" class="card">
+            <img src="car.png" alt="Car" style="width:100%">
+            <div class="containery">
+               <h4><b>Volkswagen</b></h4>
+               <p>Описание</p>
+               <a href="Сведения.html">Купить</a>
+            </div>
+         </div>
+      </td>
+      <td>
+         <div align="center" class="card">
+            <img src="car.png" alt="Car" style="width:100%">
+            <div class="containery">
+               <h4><b>PorsVagen</b></h4>
+               <p>Описание</p>
+               <a href="Сведения.html">Купить</a>
+            </div>
+         </div>
+      </td>
+   </tr>
+</table>
+
+
+<!-- </details> -->
+<!-- <div class="container">
+ </div> -->
+
+<!-- <div class="head">
+</div> -->
+
+<!-- 
+<div class="head">
+</div> -->
+
+
+<script src="script.js"></script>
+<footer>
+    <p align="right"> © <time datetime="2025">2025</time> 
+       Современные автомобили.
+       <img src="Logo.png" alt="Логотип"
+       width="40" height="30">
+       <address align="right">Шевцов Константин</address>
+      </p>
+   </footer>
+
+
+ </body>
+</html>

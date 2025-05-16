@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  
+  
+    <head>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sign Up Form</title>
+      <link rel="stylesheet" href="styleФорма.css">
+      <link rel="icon" type="image/png" href="Logo.png">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+      <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+      
+      <style>
+        header {
+            background-color: #62ebed;
+            padding: 10px;
+            text-align: center;
+        }
+    
+        footer {
+            background-color: #727272;
+            padding: 0px;
+            text-align: center;
+        }
+    </style>
+
+<header>
+  <nav>
+  <img src="Logo.png" alt="Логотип"
+       width="40" height="30">
+    <a href="index.html">Главная</a>
+    <a href="Список.html">Автомобили</a>
+    <a href="Форма.html">Обратная связь</a>
+    <a href="Сведения.html">Сведения</a>
+
+  </nav>
+</header>
+<!-- action="Форма.html" -->
+      <form method="post" id="Форма">
+        <ul>
+          <p>Имя</p>
+          <p><input type="text" class="required" id="name" name="name"></p>
+          <p>Почта</p>
+          <p><input type="email" class="required" id="email" name="email"></p>
+          <p>Телефон</p>
+          <p><input type="phone" class="required" id="phone" name="phone"></p>
+          <!-- <p>Пароль</p>
+          <p><input type="password" class="required" id="password" name="student_password"></p> -->
+
+          <select id="car" name="car">
+            <option disabled selected>Выбери машину</option>
+            <optgroup label="Машины">
+               <option>"BMW"</option>
+               <option>"Porsche"</option>
+               <option>"Volkswagen"</option>
+            </optgroup>
+         </select>
+
+          <p>Сообщение</p>
+          
+          <textarea id="bio" name="bio"></textarea>
+          <p></p>
+          <button type="submit">Подтвердить</button>
+        </ul>
+      </form>
+
+             <!-- Модальное окно Bootstrap -->
+      <div  align="center" class="modal fade" id="resultModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalTitle">Результат</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body" id="modalBody">
+              <!-- Здесь будет сообщение -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container"></div>
+
+      <footer>
+        <p align="right"> © <time datetime="2025">2025</time> 
+           Современные автомобили.
+           <img src="Logo.png" alt="Логотип"
+           width="40" height="30">
+           <address align="right">Шевцов Константин</address>
+          </p>
+       </footer>
+
+       
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+       <script src="script.js"></script>
+      </body>
+    <!-- </form> -->
+</html>

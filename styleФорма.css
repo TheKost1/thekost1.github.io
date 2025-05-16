@@ -1,0 +1,32 @@
+body {
+    background-image: url(Форма.PNG);
+    /* , url(Список.png); */
+    background-repeat: repeat;
+    /* , no-repeat; */
+    background-position: left top;
+    /* , left top 700px; */
+    background-size: 100%;
+    /* , 100%; */
+    margin: 0; /* Обнуляем отступы */
+    }
+.head {
+    width: 1000px;
+    height: 1300px;
+    /* overflow: hide; */
+}
+.center {
+    width: 600px;
+    height: 200px;
+    }
+
+
+.container {
+  display: flex; /* Создаем гибкую структуру */
+  flex-direction: column; /* Располагаем элементы вертикально */
+  min-height: 45vh; /* Минимальная высота равна высоте вьюпорта */
+}
+
+.footer {
+  margin-top: auto; /* Здесь вступает в действие магия Flexbox */
+  /* padding: 1em; */
+}
